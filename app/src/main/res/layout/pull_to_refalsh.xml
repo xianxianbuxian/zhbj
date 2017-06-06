@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<FrameLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp"
+    android:paddingRight="10dp"
+    >
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/iv_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/common_listview_headview_red_arrow"
+        />
+    <ProgressBar
+        android:indeterminateDrawable="@drawable/pb_style"
+        android:visibility="invisible"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pb_loding"
+        />
+</FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+      android:layout_weight="1"
+        android:paddingTop="20dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_list_pull_refalsh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#f00"
+            android:textSize="18sp"
+            android:text="下来刷新"
+            />
+        <TextView
+            android:id="@+id/tv_list_pull_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#a000"
+            android:textSize="16sp"
+            android:text="4545-45458-1254-8:00"
+            />
+
+    </LinearLayout>
+</LinearLayout>

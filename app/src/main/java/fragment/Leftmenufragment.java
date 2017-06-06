@@ -25,7 +25,7 @@ import jack.example.com.zhbj.R;
  * Created by jack on 2017/5/29.
  */
 
-public class Leftmenufragment extends BaseFragment {
+public class  Leftmenufragment extends BaseFragment {
     @BindView(R.id.lv_list)
     ListView lvList;
     Unbinder unbinder;

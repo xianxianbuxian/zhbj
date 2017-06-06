@@ -1,2 +1,2 @@
-include ':app', ':SlidingMenuLibrary', ':aa', ':library', ':SlidingMenu-master'
+include ':app', ':SlidingMenuLibrary', ':aa', ':library', ':SlidingMenu-master', ':sharesdk', ':ShareSdka'
 

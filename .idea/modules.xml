@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/ShareSdka/ShareSdka.iml" filepath="$PROJECT_DIR$/ShareSdka/ShareSdka.iml" />
       <module fileurl="file://$PROJECT_DIR$/SlidingMenu-master/SlidingMenu-master.iml" filepath="$PROJECT_DIR$/SlidingMenu-master/SlidingMenu-master.iml" />
       <module fileurl="file://$PROJECT_DIR$/SlidingMenuLibrary/SlidingMenuLibrary.iml" filepath="$PROJECT_DIR$/SlidingMenuLibrary/SlidingMenuLibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/aa/aa.iml" filepath="$PROJECT_DIR$/aa/aa.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sharesdk/sharesdk.iml" filepath="$PROJECT_DIR$/sharesdk/sharesdk.iml" />
       <module fileurl="file://$PROJECT_DIR$/zhbj.iml" filepath="$PROJECT_DIR$/zhbj.iml" />
     </modules>
   </component>

@@ -14,6 +14,7 @@ import android.widget.RelativeLayout;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import cn.sharesdk.framework.ShareSDK;
 import uitl.SPerfUitls;
 
 public class splshactivity extends AppCompatActivity {
@@ -28,6 +29,7 @@ public class splshactivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         supportRequestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_splshactivity);
+       ShareSDK.initSDK(this);
         ButterKnife.bind(this);
         //旋转动画
         RotateAnimation ra=new RotateAnimation(0,360, Animation.RELATIVE_TO_SELF,0.5f, Animation.RELATIVE_TO_SELF,0.5f);
@@ -62,6 +64,7 @@ public class splshactivity extends AppCompatActivity {
                 }
                 //闪屏splsh页面退出栈
                   finish();
+
             }
 
             @Override
