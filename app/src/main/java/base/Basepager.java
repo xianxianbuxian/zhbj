@@ -17,26 +17,28 @@ import jack.example.com.zhbj.R;
  */
 
 public class Basepager {
-  public Activity mActivity;
+    public Activity mActivity;
 
-   public ImageButton ibMenu;
+    public ImageButton ibMenu;
 
     public TextView tvTitle;
 
-   public FrameLayout flBase;
+    public FrameLayout flBase;
     public final View mRootview;//当前页面的布局对象
+    public ImageButton btnphoto;
 
     //构造方法
     public Basepager(Activity activity) {
         mActivity = activity;
-      mRootview = initView();
+        mRootview = initView();
     }
 
     public View initView() {
         View view = View.inflate(mActivity, R.layout.basepage, null);
-        ibMenu= (ImageButton) view.findViewById(R.id.ib_menu);
-        tvTitle= (TextView) view.findViewById(R.id.tv_title);
-        flBase= (FrameLayout) view.findViewById(R.id.fl_base);
+        ibMenu = (ImageButton) view.findViewById(R.id.ib_menu);
+        tvTitle = (TextView) view.findViewById(R.id.tv_title);
+        flBase = (FrameLayout) view.findViewById(R.id.fl_base);
+        btnphoto = (ImageButton) view.findViewById(R.id.btn_photo);
         ibMenu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -45,11 +47,13 @@ public class Basepager {
         });
         return view;
     }
+
     private void toggle() {
-        MainActivity mainui= (MainActivity) mActivity;
+        MainActivity mainui = (MainActivity) mActivity;
         SlidingMenu menu = mainui.getSlidingMenu();
         menu.toggle();//如果开关 ，如果关就开
     }
+
     public void initData() {
 
     }

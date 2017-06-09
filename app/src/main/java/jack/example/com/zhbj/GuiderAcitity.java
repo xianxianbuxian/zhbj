@@ -19,6 +19,7 @@ import java.util.ArrayList;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import uitl.DensityUtils;
 import uitl.SPerfUitls;
 
 /**
@@ -96,7 +97,7 @@ public class GuiderAcitity extends Activity {
             LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.
                     WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
             if (i > 0) {
-                layoutParams.leftMargin = 30;
+                layoutParams.leftMargin = DensityUtils.dip2px(30,this);
             }
             point.setLayoutParams(layoutParams);
             llGuider.addView(point);

@@ -67,6 +67,13 @@ public class newspager extends Basepager {
      //初始化数据
      pager.initData();
      tvTitle.setText(mNewsData.data.get(position).title);
+     //如果是图组页面，需要切换显示按钮
+     if(pager instanceof PotosmenuDetailpage){
+         btnphoto.setVisibility(View.VISIBLE);
+     } else {
+         //隐藏按钮
+         btnphoto.setVisibility(View.GONE);
+     }
 
  }
     private void processDate(String json) {
@@ -81,7 +88,7 @@ public class newspager extends Basepager {
         mMenuDetailPager=new ArrayList<>();
         mMenuDetailPager.add(new NewsmenuDetailpage(mActivity,mNewsData.data.get(0).children));
         mMenuDetailPager.add(new TopicmenuDetailpage(mActivity));
-        mMenuDetailPager.add(new PotosmenuDetailpage(mActivity));
+        mMenuDetailPager.add(new PotosmenuDetailpage(mActivity,btnphoto));
         mMenuDetailPager.add(new IntermenuDetailpage(mActivity));
        setCurrenDetailPager(0);//将新闻详情设置为详情页
     }

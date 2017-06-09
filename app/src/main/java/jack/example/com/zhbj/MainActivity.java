@@ -36,8 +36,9 @@ public class MainActivity extends SlidingFragmentActivity {
         SlidingMenu slidingMenu = getSlidingMenu();
         //设置全屏模式
         slidingMenu.setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);
+              int width= getWindowManager().getDefaultDisplay().getWidth();
         //设置侧边栏宽度
-        slidingMenu.setBehindOffset(800);
+        slidingMenu.setBehindOffset(width*2/3);
         initFragment();
     }
 
